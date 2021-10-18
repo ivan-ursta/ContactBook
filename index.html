@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contactStyle.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="myModal" class="modal">
+
+            <div class="modal-content">
+                <button class="close" id="close" type="button">X</button>
+                <div class="input">
+                    <label for="name">Имя</label>
+                    <input type="text" id="inputName" name="name">
+                </div>
+                <div class="input">
+                    <label for="phone">Телефон</label>
+                    <input type="text" id="inputPhone" name="phone">
+                </div>
+                <div class="input">
+                    <label for="age">Возраст</label>
+                    <input type="text" id="inputAge" name="age">
+                </div>
+                <button class="button" id="submit">Сохранить</button>
+            </div>
+        </div>
+
+        <div id="editModal" class="modal">
+
+            <div class="modal-content">
+                <button class="close" id="closeEdit" type="button">X</button>
+                <div class="input">
+                    <label for="name">Имя</label>
+                    <input type="text" id="editName" name="name">
+                </div>
+                <div class="input">
+                    <label for="phone">Телефон</label>
+                    <input type="text" id="editPhone" name="phone">
+                </div>
+                <div class="input">
+                    <label for="age">Возраст</label>
+                    <input type="text" id="editAge" name="age">
+                </div>
+                <button class="button" id="editBtn">Изменить</button>
+            </div>
+        </div>
+
+        <div class="output" id="output">
+        </div>
+
+        <button class="button" id="add">Добавить</button>
+    </div>
+
+
+
+    <script src="contactScript.js"></script>
+</body>
+
+</html>

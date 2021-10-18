@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 400px;
+    background-color: rgb(198, 219, 226);
+    padding: 5px;
+    margin: 5px;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    width: 280px;
+}
+
+.input label {
+    color: black;
+    margin-left: 30px;
+}
+
+.button {
+    margin: 10px auto;
+    margin-left: 3px;
+    width: 98%;
+}
+
+.modal {
+    display: none;
+    /* Скрыто по умолчанию */
+    position: fixed;
+    /* Оставаться на месте */
+    z-index: 1;
+    /* Сидеть на вершине */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Полная ширина */
+    height: 100%;
+    /* Полная высота */
+    overflow: auto;
+    /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0, 0, 0);
+    /* Цвет запасной вариант */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Черный с непрозрачностью */
+}
+
+.modal-content {
+    display: block;
+    background-color: #badbe0;
+    margin: 15% auto;
+    /* 15% сверху и по центру */
+    padding: 15px;
+    border: 1px solid #888;
+    width: 400px;
+    /* Может быть больше или меньше, в зависимости от размера экрана */
+}
+
+.outputContent {
+    margin: 10px;
+    background-color: rgb(243, 246, 247);
+}
+
+.close {
+    float: right;
+    width: 20px;
+    background-color: red;
+}
+
+button {
+    background-color: royalblue;
+    color: white;
+}
+
+#delete,
+#edit {
+    margin-left: 350px;
+    margin-top: 10px;
+    width: 20px;
+}
+
+p {
+    width: 150px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
